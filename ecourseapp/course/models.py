@@ -28,7 +28,7 @@ class Category(BaseModel):
 class Course(BaseModel):
     name = models.CharField(max_length=255)
     description = RichTextField()
-    # image = models.ImageField(upload_to='courses/%Y/%m/')
+    image = models.ImageField(upload_to='courses/%Y/%m/')
     image = cloudinary.CloudinaryImage
     category = models.ForeignKey(Category, on_delete=models.PROTECT)
 

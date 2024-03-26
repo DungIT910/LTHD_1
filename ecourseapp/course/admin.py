@@ -1,5 +1,5 @@
 from django.contrib import admin
-from course.models import Course, Category
+from .models import Course, Category
 from django.utils.html import mark_safe
 from django import forms
 from ckeditor_uploader.widgets import CKEditorUploadingWidget

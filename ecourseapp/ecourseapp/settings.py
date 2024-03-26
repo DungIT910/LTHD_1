@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'course',
     'ckeditor',
-    'ckeditor_uploader'
+    'ckeditor_uploader',
+    'rest_framework',
+    'drf_yasg'
 ]
 CKEDITOR_UPLOAD_PATH = "ckeditor/images/"
 AUTH_USER_MODEL = 'course.User'
